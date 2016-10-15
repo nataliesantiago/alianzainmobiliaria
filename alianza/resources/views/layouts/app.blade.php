@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Alianza inmobiliaria</title>
+    <title>{{ config('app.name', 'Alianza') }}</title>
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
@@ -34,8 +34,8 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Alianza inmobiliaria
+                <a class="navbar-brand" href="{{ url('/home') }}">
+                   Alianza 
                 </a>
             </div>
 

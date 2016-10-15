@@ -32,13 +32,6 @@ class CreateInmueblesTable extends Migration
                 ->onDelete('cascade');
             $table->float('area_total');
             $table->float('area_construccion');
-            $table->integer('numero_plantas');
-            $table->integer('numero_baños');
-            $table->integer('numero_alcobas');
-            $table->integer('numero_cocinas');
-            $table->integer('numero_garage');
-            $table->integer('numero_sala');
-            $table->integer('numero_patio');
             $table->string('observacion');
             $table->timestamps();
         });
