@@ -22,7 +22,7 @@
             </div>
             <div class="col-md-4">
                 <img class="img-responsive" src="img/service2.jpg" alt="">            
-                <h2>Mobile Development</h2>
+                <h2>Licencias</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>        
             </div>
             <div class="col-md-4 md-margin-bottom-40">
