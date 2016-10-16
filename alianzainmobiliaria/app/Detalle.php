@@ -16,4 +16,7 @@ class Detalle extends Model
     protected $fillable = [
         'nombre',
     ];
+     public function distribuciones(){
+        return $this->hasMany('App\Distribucion');
+    }
 }

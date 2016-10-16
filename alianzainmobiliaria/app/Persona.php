@@ -16,4 +16,7 @@ class Persona extends Model
     protected $fillable = [
         'nombre','apellido','email','telefono','observacion',
     ];
+     public function inmuebles(){
+        return $this->hasMany('App\Inmueble');
+    }
 }

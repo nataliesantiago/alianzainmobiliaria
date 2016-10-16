@@ -16,4 +16,8 @@ class Servicio extends Model
     protected $fillable = [
         'nombre',
     ];
+      public function dotaciones(){
+        return $this->hasMany('App\Dotacion');
+    }
+
 }

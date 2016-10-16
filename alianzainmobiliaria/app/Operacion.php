@@ -16,4 +16,7 @@ class Operacion extends Model
     protected $fillable = [
         'nombre',
     ];
+     public function postulaciones(){
+        return $this->hasMany('App\Postulacion');
+    }
 }

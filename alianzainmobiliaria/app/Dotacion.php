@@ -16,4 +16,10 @@ class Dotacion extends Model
     protected $fillable = [
         'inmueble_id','servicio_id',
     ];
+       public function servicio(){
+        return $this->belongsTo('App\Servicio');
+    }
+       public function inmueble(){
+        return $this->belongsTo('App\Inmueble');
+    }
 }

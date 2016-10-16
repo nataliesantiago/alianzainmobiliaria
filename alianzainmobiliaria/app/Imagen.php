@@ -16,5 +16,7 @@ class Imagen extends Model
     protected $fillable = [
         'inmueble_id','servicio_id',
     ];
-
+      public function inmueble(){
+        return $this->belongsTo('App\Inmueble');
+    }
 }

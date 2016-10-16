@@ -16,4 +16,10 @@ class Postulacion extends Model
     protected $fillable = [
         'operacion_id','operaciones','fecha_inicio','fecha_fin','precio','estado_pustulacion',
     ];
+        public function operacion(){
+        return $this->belongsTo('App\Operacion');
+    }
+       public function inmueble(){
+        return $this->belongsTo('App\Inmueble');
+    }
 }

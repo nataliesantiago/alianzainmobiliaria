@@ -16,4 +16,10 @@ class Distribucion extends Model
     protected $fillable = [
         'inmueble_id','detalle_id',
     ];
+       public function detalle(){
+        return $this->belongsTo('App\Detalle');
+    }
+       public function inmueble(){
+        return $this->belongsTo('App\Inmueble');
+    }
 }

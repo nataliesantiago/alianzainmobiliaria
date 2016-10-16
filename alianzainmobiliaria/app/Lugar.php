@@ -16,4 +16,10 @@ class Lugar extends Model
     protected $fillable = [
         'ubicacion_id','nombre','tipo',
     ];
+     public function lugares(){
+        return $this->hasMany('App\Lugar');
+    }
+     public function lugar(){
+        return $this->belongsTo('App\Lugar');
+    }
 }
