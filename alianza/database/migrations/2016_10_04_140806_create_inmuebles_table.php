@@ -31,7 +31,6 @@ class CreateInmueblesTable extends Migration
                 ->on('tipos')
                 ->onDelete('cascade');
             $table->float('area_total');
-            $table->float('area_construccion');
             $table->string('observacion');
             $table->timestamps();
         });
